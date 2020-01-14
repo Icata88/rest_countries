@@ -1,0 +1,16 @@
+.empty-form {
+  visibility: hidden;
+  text-align: left;
+  color: #ff0033;
+  font-weight: bold;
+  &.show {
+    visibility: inherit;
+  }
+}
+
+input, select {
+  &.empty {
+    border-color: #ff0033;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+  }
+}

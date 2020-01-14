@@ -1,0 +1,13 @@
+.Country {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  &:nth-of-type(odd) {
+    background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.Country-img {
+  width: 250px;
+  box-shadow: 0 0 8px rgba(0,0,0,.5);
+}

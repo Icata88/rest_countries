@@ -1,0 +1,33 @@
+.FilterResults-head {
+  font-weight: bold;
+  padding: 10px 0;
+  border-top: 2px solid lightgray;
+}
+
+.FilterResults-head-name {
+  position: relative;
+  cursor: pointer;
+  &:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    right: 10px;
+    top: 10px;
+
+  }
+  &.asc:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+    border-bottom: 0px solid transparent;
+  }
+
+  &.desc:after {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-bottom: 10px solid #ccc;
+  }
+
+}
